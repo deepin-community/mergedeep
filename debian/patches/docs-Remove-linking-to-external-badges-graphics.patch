@@ -1,0 +1,30 @@
+From: Carsten Schoenert <c.schoenert@t-online.de>
+Date: Wed, 23 Feb 2022 18:04:14 +0100
+Subject: docs: Remove linking to external badges graphics
+
+Forwarded: Not-Needed
+---
+ docs/source/index.md | 10 ----------
+ 1 file changed, 10 deletions(-)
+
+diff --git a/docs/source/index.md b/docs/source/index.md
+index 71c836b..85b3c4e 100644
+--- a/docs/source/index.md
++++ b/docs/source/index.md
+@@ -9,16 +9,6 @@
+ 
+ ```eval_rst
+ Version |version|
+-
+-.. image:: https://img.shields.io/pypi/v/mergedeep.svg
+-    :target: https://pypi.org/project/mergedeep/
+-
+-.. image:: https://img.shields.io/pypi/pyversions/mergedeep.svg
+-    :target: https://pypi.org/project/mergedeep/
+-    
+-.. image:: https://pepy.tech/badge/mergedeep
+-    :target: https://pepy.tech/project/mergedeep
+-    
+ ```
+ 
+ **A deep merge function for 🐍.**
