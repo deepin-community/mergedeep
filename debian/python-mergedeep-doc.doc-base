@@ -1,0 +1,8 @@
+Document: python-mergedeep-doc
+Title: A deep merge function for Python
+Abstract: Usage and Merge strategies for mergedeep
+Section: Programming/Python
+
+Format: HTML
+Index: /usr/share/doc/python-mergedeep-doc/html/index.html
+Files: /usr/share/doc/python-mergedeep-doc/html/*.html

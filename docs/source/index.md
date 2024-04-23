@@ -1,15 +1,27 @@
-# [mergedeep](https://mergedeep.readthedocs.io/en/latest/)
+```eval_rst
+.. meta::
+   :description: mergedeep: A deep merge function for 🐍.
 
-[![PyPi release](https://img.shields.io/pypi/v/mergedeep.svg)](https://pypi.org/project/mergedeep/)
-[![PyPi versions](https://img.shields.io/pypi/pyversions/mergedeep.svg)](https://pypi.org/project/mergedeep/)
-[![Downloads](https://pepy.tech/badge/mergedeep)](https://pepy.tech/project/mergedeep)
-[![Conda Version](https://img.shields.io/conda/vn/conda-forge/mergedeep.svg)](https://anaconda.org/conda-forge/mergedeep)
-[![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/mergedeep.svg)](https://anaconda.org/conda-forge/mergedeep)
-[![Documentation Status](https://readthedocs.org/projects/mergedeep/badge/?version=latest)](https://mergedeep.readthedocs.io/en/latest/?badge=latest)
+.. title:: mergedeep
+```
 
-A deep merge function for 🐍.
+# [mergedeep](https://pypi.org/project/mergedeep/)
 
-[Check out the mergedeep docs](https://mergedeep.readthedocs.io/en/latest/)
+```eval_rst
+Version |version|
+
+.. image:: https://img.shields.io/pypi/v/mergedeep.svg
+    :target: https://pypi.org/project/mergedeep/
+
+.. image:: https://img.shields.io/pypi/pyversions/mergedeep.svg
+    :target: https://pypi.org/project/mergedeep/
+    
+.. image:: https://pepy.tech/badge/mergedeep
+    :target: https://pepy.tech/project/mergedeep
+    
+```
+
+**A deep merge function for 🐍.**
 
 ## Installation
 
@@ -54,7 +66,7 @@ print(a)
 
 ### Merge strategies:
 
-1. Replace (*default*)
+* Replace (*default*)
 
 > `Strategy.REPLACE`
 
@@ -75,7 +87,7 @@ print(dst)
 # {"key": [3, 4]}
 ```
 
-2. Additive
+* Additive
 
 > `Strategy.ADDITIVE`
 
@@ -96,7 +108,7 @@ print(dst)
 # {"key": [1, 2, 3, 4], "count": Counter({"a": 2, "b": 1, "c": 1})}
 ```
 
-3. Typesafe replace
+* Typesafe replace
 
 > `Strategy.TYPESAFE_REPLACE` or `Strategy.TYPESAFE`
 
@@ -112,7 +124,7 @@ merge(dst, src, strategy=Strategy.TYPESAFE_REPLACE) # same as: `Strategy.TYPESAF
 # TypeError: destination type: <class 'list'> differs from source type: <class 'set'> for key: "key"
 ```
 
-4. Typesafe additive
+* Typesafe additive
 
 > `Strategy.TYPESAFE_ADDITIVE`
 
@@ -130,4 +142,5 @@ merge(dst, src, strategy=Strategy.TYPESAFE_ADDITIVE)
 
 ## License
 
-MIT &copy; [**Travis Clarke**](https://blog.travismclarke.com/)
+MIT © [**Travis Clarke**](https://blog.travismclarke.com/)
+
