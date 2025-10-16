@@ -1,3 +1,23 @@
+mergedeep (1.3.4-4) unstable; urgency=medium
+
+  * [5e69c93] Rebuild patch queue from patch-queue branch
+    Added patches:
+    docs-Use-local-intersphinx-while-build-of-documentation.patch
+    setup.py-Fix-warning-due-use-of-tuple.patch
+    move-py.typed-to-fix-15-also-see-2.patch
+    (Closes: #1090104)
+  * [1ef8c5f] d/control: Use dh-sequence-python3
+  * [7bdfef3] d/control: Use dh-sequence-sphinxdoc
+  * [3a40e2d] d/control: Use pybuild-plugin-pyproject in B-D
+  * [10ba45c] d/rules: Drop --with option in default target
+  * [e388a41] d/control: Add python3-doc to B-D
+  * [88974b2] d/control: Set BuildProfileSpecs on B-D
+  * [e7180b2] d/rules: Let dh_clean remove .mypy_cache
+  * [56e0606] d/control: Bump Standards-Version to 4.7.0
+    No further changes needed.
+
+ -- Carsten Schoenert <c.schoenert@t-online.de>  Wed, 18 Dec 2024 20:11:34 +0200
+
 mergedeep (1.3.4-3) unstable; urgency=medium
 
   [ root ]

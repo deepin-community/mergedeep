@@ -1,1 +1,4 @@
 docs-Remove-linking-to-external-badges-graphics.patch
+docs-Use-local-intersphinx-while-build-of-documentation.patch
+setup.py-Fix-warning-due-use-of-tuple.patch
+move-py.typed-to-fix-15-also-see-2.patch
