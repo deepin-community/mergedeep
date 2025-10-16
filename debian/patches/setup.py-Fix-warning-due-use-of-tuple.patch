@@ -1,0 +1,31 @@
+From: Po-Chuan Hsieh <sunpoet@sunpoet.net>
+Date: Fri, 17 Jun 2022 02:52:49 +0800
+Subject: setup.py: Fix warning due use of tuple
+
+Warning: 'classifiers' should be a list, got type 'tuple'
+
+Forwarded: https://github.com/clarketm/mergedeep/pull/13
+---
+ setup.py | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/setup.py b/setup.py
+index 3d3bc69..75a6b5f 100644
+--- a/setup.py
++++ b/setup.py
+@@ -20,7 +20,7 @@ setuptools.setup(
+     python_requires=">=3.6",
+     packages=setuptools.find_packages(),
+     package_data={"mergedeep": ["py.typed"]},
+-    classifiers=(
++    classifiers=[
+         "Programming Language :: Python :: 3",
+         "Programming Language :: Python :: 3.6",
+         "Programming Language :: Python :: 3.7",
+@@ -28,5 +28,5 @@ setuptools.setup(
+         "Programming Language :: Python :: 3.9",
+         "License :: OSI Approved :: MIT License",
+         "Operating System :: OS Independent",
+-    ),
++    ],
+ )

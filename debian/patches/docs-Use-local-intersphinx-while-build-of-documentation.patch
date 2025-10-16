@@ -1,0 +1,23 @@
+From: Carsten Schoenert <c.schoenert@t-online.de>
+Date: Wed, 18 Dec 2024 19:11:15 +0200
+Subject: docs: Use local intersphinx while build of documentation
+
+---
+ docs/source/conf.py | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+diff --git a/docs/source/conf.py b/docs/source/conf.py
+index 75ce40d..eb36a83 100644
+--- a/docs/source/conf.py
++++ b/docs/source/conf.py
+@@ -206,7 +206,9 @@ epub_exclude_files = ["search.html"]
+ # -- Options for intersphinx extension ---------------------------------------
+ 
+ # Example configuration for intersphinx: refer to the Python standard library.
+-intersphinx_mapping = {"https://docs.python.org/": None}
++intersphinx_mapping = {
++    "python": ("/usr/share/doc/python3-doc/html", None),
++}
+ 
+ # -- Options for todo extension ----------------------------------------------
+ 

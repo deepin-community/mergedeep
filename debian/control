@@ -6,15 +6,18 @@ Section: python
 Priority: optional
 Build-Depends:
  debhelper-compat (= 13),
+ dh-sequence-python3,
+ dh-sequence-sphinxdoc,
+ pybuild-plugin-pyproject,
  python3-all,
-Build-Depends-Indep:
- dh-python,
- python3-recommonmark,
  python3-setuptools,
- python3-sphinx,
- python3-sphinx-rtd-theme,
+Build-Depends-Indep:
+ python3-doc <!nodoc>,
+ python3-recommonmark <!nodoc>,
+ python3-sphinx <!nodoc>,
+ python3-sphinx-rtd-theme <!nodoc>,
 Rules-Requires-Root: no
-Standards-Version: 4.6.0
+Standards-Version: 4.7.0
 Vcs-Browser: https://salsa.debian.org/python-team/packages/mergedeep
 Vcs-Git: https://salsa.debian.org/python-team/packages/mergedeep.git
 Homepage: https://github.com/clarketm/mergedeep
